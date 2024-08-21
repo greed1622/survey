@@ -21,13 +21,11 @@ class SurveyForm extends Component
                 'addresses.Province',
                 'services.ServiceAvailed',
                 'services.Purpose',
-
             )
             ->join('addresses', 'addresses.customers_id', '=', 'customers.id')
             ->join('services','services.customers_id', '=', 'customers.id')
             ->get();
     }
-
     public function render()
     {
         return view('livewire.survey-form', ['customers' => $this->customers]);
