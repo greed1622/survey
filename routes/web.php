@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Survey;
 
 
-Route::get('/survey-form', SurveyForm::class)->name('survey.form');
+Route::get('/survey-form', SurveyForm::class);
 Route::get('/survey', Survey::class)->name('survey.page');
 Route::get('/success', function () {
     return 'Transaction successful!';
