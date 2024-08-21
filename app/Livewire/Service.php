@@ -41,7 +41,7 @@ class Service extends Component
         ];
 
         ServiceModel::create($datatoSave);
-        return $this->redirect('/profile', navigate:true);
+        return $this->redirect('/rating', navigate:true);
     }
 
     public function render()
