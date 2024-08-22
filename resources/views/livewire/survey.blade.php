@@ -1,4 +1,4 @@
-<div>
+<div class="card-body">
     @if($lastInsertedId)
     <p>Last inserted ID: {{ $lastInsertedId }}</p>
     @endif

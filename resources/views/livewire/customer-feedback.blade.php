@@ -1,4 +1,4 @@
-<div>
+<div class="card-body">
     <form wire:submit="save">
         <label for="">Please check if you are providing compliment, suggestion, or complaint.</label>
         <input type="checkbox" name="" wire:model="TypesOfFeedback" id="compliment" value="Compliment"> <label for="compliment">Compliment</label>

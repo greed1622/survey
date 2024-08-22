@@ -1,4 +1,4 @@
-<div>
+<div class="card-body">
     <h1>Services Availed</h1>
     <form wire:submit.prevent="save">
         <label>

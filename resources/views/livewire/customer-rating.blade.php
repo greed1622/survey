@@ -1,4 +1,4 @@
-<div>
+<div class="card-body">
     <h1>Customer Rating</h1>
     <form wire:submit="save">
         <label>How satisfied were you in terms of the response time to your transaction given by the office?
