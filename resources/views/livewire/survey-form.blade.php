@@ -1,4 +1,4 @@
-<div class="card-body">
+<div class="card-body offset-2 col-8 p-12">
     <table class="table table-striped gy-7 gs-7">
         <thead>
             <tr class="fw-bold fs-6 text-gray-800 border-bottom border-gray-200">
