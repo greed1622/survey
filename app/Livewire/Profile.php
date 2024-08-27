@@ -24,7 +24,7 @@ class Profile extends Component
         $customer=Customer::create($validated);
         Session::put('lastid',$customer->id);
         // return redirect()->to('/survey');
-        return $this->redirect('/survey',navigate:true);
+        return $this->redirect('/address',navigate:true);
 
     }
 

@@ -1,17 +1,16 @@
 <?php
 
+use App\Livewire\CustomerAddress;
 use App\Livewire\CustomerFeedback;
 use App\Livewire\CustomerRating;
 use App\Livewire\Profile;
 use App\Livewire\Service;
 use App\Livewire\SurveyForm;
 use Illuminate\Support\Facades\Route;
-use App\Livewire\Survey;
-
 
 Route::get('/', Profile::class);
 Route::get('/survey-form', SurveyForm::class);
-Route::get('/survey', Survey::class)->name('survey.page');
+Route::get('/address', CustomerAddress::class);
 Route::get('/success', function () {
     return 'Transaction successful!';
 })->name('success');
