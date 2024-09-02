@@ -14,10 +14,10 @@ return new class extends Migration
         Schema::create('customers', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('FirstName');
-            $table->string('MiddleName')->nullable();
-            $table->string('LastName');
-            $table->string('Suffix')->nullable();
+            $table->string('FirstName')->nullable()->default('');
+            $table->string('MiddleName')->nullable()->default('');
+            $table->string('LastName')->nullable()->default('');
+            $table->string('Suffix')->nullable()->default('');
         });
     }
 

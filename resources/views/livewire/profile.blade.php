@@ -1,4 +1,3 @@
-
 <div class="card-body offset-2 col-8 p-12">
     <h1>Customer Profile</h1>
     <form wire:submit="save" id="kt_invoice_form">

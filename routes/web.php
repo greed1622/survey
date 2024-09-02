@@ -24,5 +24,5 @@ Route::get('/cancelled', function () {
 Route::get('/profile', Profile::class);
 
 Route::get('/services', Service::class);
-Route::get('/rating', CustomerRating::class);
+Route::get('/rating', Customerrating::class);
 Route::get('/feedback', CustomerFeedback::class);

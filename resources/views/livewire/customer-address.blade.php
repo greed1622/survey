@@ -7,11 +7,11 @@
         <div class="row mb-5">
             <div class="col">
                 <label for="formcontrol1" class="form-label">House No.</label>
-                <input type="text" id="formcontrol1" class="form-control" placeholder="House No." id="">
+                <input type="text" id="formcontrol1" wire:model="HouseNo" class="form-control" placeholder="House No." id="">
             </div>
             <div class="col">
                 <label for="formcontrol2" class="form-label">Street</label>
-                <input type="text" id="formcontrol2" class="form-control" id="" placeholder="Street">
+                <input type="text" id="formcontrol2" wire:model="Street" class="form-control" id="" placeholder="Street">
             </div>
         </div>
         <div class="row mb-5">
@@ -31,7 +31,7 @@
             </div>
             <div class="col">
                 <label for="formcontrol6" class="form-label">Zip Code</label>
-                <input type="text" id="formcontrol6" class="form-control" id="" placeholder="Zip Code">
+                <input type="text" id="formcontrol6" wire:model="Zip" class="form-control" id="" placeholder="Zip Code">
             </div>
         </div>
         <button type="submit" class="btn btn-primary float-end">Next</button>

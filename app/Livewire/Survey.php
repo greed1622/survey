@@ -17,6 +17,9 @@ class Survey extends Component
     public function mount()
     {
         $this->lastInsertedId = Session::get('lastid');
+        if ($this->lastInsertedId==null){
+            return $this->redirect('/profile', navigate:true);
+        } 
     }
     public function save(){
         $validated=$this->validate([

@@ -16,9 +16,9 @@ class Profile extends Component
     public function save()
     {
         $validated=$this->validate([
-            'FirstName' => 'required|string|max:30',
+            'FirstName' => 'nullable|string|max:30',
             'MiddleName' => 'nullable|string|max:30',
-            'LastName' => 'required|string|max:30',
+            'LastName' => 'nullable|string|max:30',
             'Suffix' => 'nullable|string|max:30',
         ]);
         $customer=Customer::create($validated);
